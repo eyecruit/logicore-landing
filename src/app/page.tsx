@@ -2,6 +2,7 @@ import { Background, Companies, Connect, Container, CTA, Hero, Perks, Pricing, R
 import AnimatedFeatures from "@/components/main/features";
 import { Spotlight } from "@/components/ui/spotlight";
 import { generateMetadata } from "@/functions/metadata";
+import MarketingLayout from "./(main)/layout";
 
 export const metadata = generateMetadata({
   title: "LogiCore - Web Development Agency",
@@ -10,7 +11,7 @@ export const metadata = generateMetadata({
 
 export default function HomePage() {
     return (
-        <Background>
+        <MarketingLayout>
             <Wrapper className="py-20 relative">
                 <Container className="relative">
                     <Spotlight
@@ -30,6 +31,6 @@ export default function HomePage() {
                 <Reviews />
                 <CTA />
             </Wrapper>
-        </Background>
+        </MarketingLayout>
     )
 } 
