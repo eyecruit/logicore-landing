@@ -9,15 +9,15 @@ const nextConfig = {
             }
         ]
     },
-    // Add rewrites for route groups
-    async rewrites() {
-        return [
-            {
-                source: '/',
-                destination: '/main'
-            }
-        ];
-    }
+    // Remove rewrites as they might be causing issues
+    // async rewrites() {
+    //     return [
+    //         {
+    //             source: '/',
+    //             destination: '/main'
+    //         }
+    //     ];
+    // }
 };
 
 export default nextConfig;

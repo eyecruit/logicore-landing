@@ -2,7 +2,15 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  // Just pass through all requests
+  // Get the pathname from the URL
+  const url = request.nextUrl.clone();
+  const { pathname } = url;
+
+  // If the pathname is the root, redirect to the home page
+  if (pathname === '/') {
+    return NextResponse.next();
+  }
+
   return NextResponse.next();
 }
 
