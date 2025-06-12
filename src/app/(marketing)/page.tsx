@@ -1,4 +1,5 @@
-import { Background, Companies, Connect, Container, CTA, Features, Hero, Perks, Pricing, Reviews, Wrapper } from "@/components";
+import { Background, Companies, Connect, Container, CTA , Hero, Perks, Pricing, Reviews, Wrapper } from "@/components";
+import AnimatedFeatures from "@/components/marketing/features";
 import { Spotlight } from "@/components/ui/spotlight";
 import { generateMetadata } from "@/functions/metadata";
 
@@ -18,12 +19,12 @@ export default function HomePage() {
                     />
                     <Hero />
                 </Container>
-                <Container className="py-8 lg:py-20">
+                {/* <Container className="py-8 lg:py-20">
                     <Companies />
-                </Container>
-                <Connect />
-                <Features />
-                <Perks />
+                </Container> */}
+                {/* <Connect /> */}
+                <AnimatedFeatures /> {/*  What we do */}
+                <Perks /> {/* Services */}
                 <Pricing />
                 <Reviews />
                 <CTA />

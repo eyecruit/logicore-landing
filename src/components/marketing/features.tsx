@@ -7,12 +7,12 @@ import MagicCard from "../ui/magic-card";
 import { Ripple } from "../ui/ripple";
 import { SectionBadge } from "../ui/section-bade";
 
-const Features = () => {
+const AnimatedFeatures = () => {
     return (
         <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24 w-full">
             <Container>
                 <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
-                    <SectionBadge title="Services" />
+                    <SectionBadge title="What We Do" />
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
                         Web solutions that <br /> drive results
                     </h2>
@@ -152,4 +152,4 @@ const Features = () => {
     )
 };
 
-export default Features
+export default AnimatedFeatures
