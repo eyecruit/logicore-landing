@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Remove static export and trailingSlash for Vercel deployment
+    // Configuration for Vercel deployment
     images: {
         remotePatterns: [
             {
@@ -9,9 +9,14 @@ const nextConfig = {
             }
         ]
     },
-    // Fix for route groups in Vercel deployment
-    experimental: {
-        appDir: true
+    // Add rewrites for route groups
+    async rewrites() {
+        return [
+            {
+                source: '/',
+                destination: '/main'
+            }
+        ];
     }
 };
 
