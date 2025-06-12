@@ -1,36 +1,36 @@
 import { Icons } from "@/components";
-import { ZapIcon, ChartSplineIcon, LifeBuoyIcon, PaletteIcon, ShieldCheckIcon, WaypointsIcon, BrainCircuitIcon, SparklesIcon } from "lucide-react";
+import { Zap, Monitor, LifeBuoy, Palette, Search, Code, Smartphone } from "lucide-react";
 import React from "react";
 
 export const PERKS = [
     {
-        icon: ZapIcon,
-        title: "Streamlined Workflows",
-        description: "Boost productivity with optimized business processes and automated task management."
+        icon: Code,
+        title: "Clean, Modern Code",
+        description: "We write maintainable, future-proof code that follows best practices and industry standards."
     },
     {
-        icon: ChartSplineIcon,
-        title: "Business Intelligence",
-        description: "Make data-driven decisions with comprehensive analytics and performance tracking."
+        icon: Smartphone,
+        title: "Responsive Design",
+        description: "Every website we build works flawlessly across all devices, from mobile phones to large desktops."
     },
     {
-        icon: LifeBuoyIcon,
-        title: "Dedicated Support",
-        description: "Our expert team is available to assist with implementation, training, and ongoing support."
+        icon: Zap,
+        title: "Performance Optimized",
+        description: "Lightning-fast websites that provide excellent user experience and boost search engine rankings."
     },
     {
-        icon: PaletteIcon,
-        title: "Flexible & Customizable",
-        description: "Tailor the platform to match your specific business needs and workflows."
+        icon: Palette,
+        title: "Custom UI/UX Design",
+        description: "Beautiful, intuitive interfaces designed to engage visitors and drive conversions."
     },
     {
-        icon: ShieldCheckIcon,
-        title: "Enterprise Security",
-        description: "Rest easy knowing your business data is protected with advanced security measures."
+        icon: Search,
+        title: "SEO Best Practices",
+        description: "Built-in search engine optimization to help your website rank higher and attract more visitors."
     },
     {
-        icon: WaypointsIcon,
-        title: "Unified Platform",
-        description: "Manage tasks, projects, contracts, customers, and clients all in one centralized system."
+        icon: LifeBuoy,
+        title: "Ongoing Support",
+        description: "We don't just build and leave. Our team provides continuous support and maintenance for your website."
     },
 ];

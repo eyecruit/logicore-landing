@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { cn } from "@/functions";
 import { useClickOutside } from "@/hooks";
 import { motion } from "framer-motion";
-import { Box, CalendarClock, Captions, CircleHelp, CopyCheck, FileText, Gem, Layers3, LineChart, Newspaper, UserCog, Waypoints } from "lucide-react";
+import { FileText, Gem, HelpCircle, Info, Layers3, Package, Monitor, Smartphone, UserCog, Waypoints } from "lucide-react";
 import Link from "next/link";
 import React from 'react';
 
@@ -46,42 +46,42 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                         onClick={() => setIsOpen(false)}
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                     >
-                        <Link href="/how-it-works" className="flex items-center w-full text-start">
-                            <UserCog className="w-4 h-4 mr-2" />
-                            How it works
+                        <Link href="/about" className="flex items-center w-full text-start">
+                            <Info className="w-4 h-4 mr-2" />
+                            About Us
                         </Link>
                     </li>
                     <Accordion type="single" collapsible className="w-full">
                         <AccordionItem value="item-1" className="border-transparent">
                             <AccordionTrigger className="px-4 py-2 text-lg hover:text-muted-foreground font-normal">
                                 <span className="flex items-center">
-                                    <CopyCheck className="w-4 h-4 mr-2" />
-                                    Features
+                                    <Monitor className="w-4 h-4 mr-2" />
+                                    Services
                                 </span>
                             </AccordionTrigger>
                             <AccordionContent onClick={() => setIsOpen(false)} className="flex flex-col items-start gap-1 mt-1">
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/" className="flex items-center w-full text-start">
-                                        <Captions className="w-4 h-4 mr-2" />
-                                        Caption Generation
+                                    <Link href="/services/web-design" className="flex items-center w-full text-start">
+                                        <Monitor className="w-4 h-4 mr-2" />
+                                        Web Design
                                     </Link>
                                 </li>
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/" className="flex items-center w-full text-start">
-                                        <CalendarClock className="w-4 h-4 mr-2" />
-                                        Post Scheduling
+                                    <Link href="/services/web-development" className="flex items-center w-full text-start">
+                                        <Monitor className="w-4 h-4 mr-2" />
+                                        Web Development
                                     </Link>
                                 </li>
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/" className="flex items-center w-full text-start">
-                                        <LineChart className="w-4 h-4 mr-2" />
-                                        Analytics Dashboard
+                                    <Link href="/services/responsive-design" className="flex items-center w-full text-start">
+                                        <Smartphone className="w-4 h-4 mr-2" />
+                                        Responsive Design
                                     </Link>
                                 </li>
                             </AccordionContent>
@@ -91,7 +91,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                         onClick={() => setIsOpen(false)}
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                     >
-                        <Link href="/" className="flex items-center w-full text-start">
+                        <Link href="/pricing" className="flex items-center w-full text-start">
                             <Gem className="w-4 h-4 mr-2" />
                             Pricing
                         </Link>
@@ -100,9 +100,9 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                         onClick={() => setIsOpen(false)}
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                     >
-                        <Link href="/" className="flex items-center w-full text-start">
+                        <Link href="/projects" className="flex items-center w-full text-start">
                             <Waypoints className="w-4 h-4 mr-2" />
-                            Integrations
+                            Projects
                         </Link>
                     </li>
                     <Accordion type="single" collapsible className="w-full">
@@ -117,15 +117,15 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/" className="flex items-center w-full text-start">
-                                        <Newspaper className="w-4 h-4 mr-2" />
+                                    <Link href="/resources/blog" className="flex items-center w-full text-start">
+                                        <FileText className="w-4 h-4 mr-2" />
                                         Blog
                                     </Link>
                                 </li>
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/" className="flex items-center w-full text-start">
+                                    <Link href="/resources/case-studies" className="flex items-center w-full text-start">
                                         <FileText className="w-4 h-4 mr-2" />
                                         Case Studies
                                     </Link>
@@ -133,16 +133,16 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/" className="flex items-center w-full text-start">
-                                        <Box className="w-4 h-4 mr-2" />
+                                    <Link href="/resources/tools" className="flex items-center w-full text-start">
+                                        <Package className="w-4 h-4 mr-2" />
                                         Tools
                                     </Link>
                                 </li>
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/" className="flex items-center w-full text-start">
-                                        <CircleHelp className="w-4 h-4 mr-2" />
+                                    <Link href="/contact" className="flex items-center w-full text-start">
+                                        <HelpCircle className="w-4 h-4 mr-2" />
                                         Support
                                     </Link>
                                 </li>

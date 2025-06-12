@@ -12,12 +12,12 @@ const Features = () => {
         <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24 w-full">
             <Container>
                 <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
-                    <SectionBadge title="Features" />
+                    <SectionBadge title="Services" />
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
-                        Manage your business <br /> with confidence
+                        Web solutions that <br /> drive results
                     </h2>
                     <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
-                        Transform your business operations with CRMSync's powerful features, designed to streamline workflows and boost productivity across your organization.
+                        LogiCore delivers cutting-edge web development solutions that help businesses establish a powerful online presence and achieve their digital goals.
                     </p>
                 </div>
             </Container>
@@ -40,10 +40,10 @@ const Features = () => {
                                     </div>
                                     <div className="flex flex-col">
                                         <h4 className="text-xl font-heading font-medium heading ">
-                                            Comprehensive analytics
+                                            Responsive Web Design
                                         </h4>
                                         <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                            Track business performance with detailed metrics and insights to make data-driven decisions.
+                                            Beautiful, functional websites that adapt perfectly to any device and screen size.
                                         </p>
                                     </div>
                                 </div>
@@ -60,10 +60,10 @@ const Features = () => {
                                     </div>
                                     <div className="flex flex-col mt-auto">
                                         <h4 className="text-xl font-heading font-medium heading">
-                                            Project management
+                                            UI/UX Design
                                         </h4>
                                         <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                            Plan, track, and manage projects efficiently with intuitive tools that keep your team aligned and productive.
+                                            User-centered design that creates intuitive, engaging experiences that keep visitors coming back.
                                         </p>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@ const Features = () => {
                                     <div className="bento-card w-full relative items-center justify-center">
                                         <div className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                                             <p className="text-base text-muted-foreground text-justify [mask-image:radial-gradient(50%_50%_at_50%_50%,#BAB3FF_0%,rgba(186,179,255,0)_90.69%)]">
-                                                We help businesses streamline operations with our comprehensive management platform. Our tools are designed to optimize workflows and boost productivity across your organization. Transform your business operations with CRMSync's powerful features. Connect with customers, manage contracts, and track projects all in one place. Manage your business with confidence using CRMSync. Transform your business operations with CRMSync's powerful features. Manage tasks, projects, contracts, customers, and clients efficiently with CRMSync. Transform your business operations with CRMSync's powerful features.
+                                                We help businesses establish a powerful online presence with our comprehensive web development services. Our solutions are designed to optimize user experience and drive conversions across all platforms. Transform your digital presence with LogiCore's powerful web solutions. Connect with customers, showcase your products, and grow your business with a professional website. Build your online brand with confidence using LogiCore. Transform your business with LogiCore's innovative web development. Create stunning, functional websites that engage users and deliver results with LogiCore's expert team.
                                             </p>
                                         </div>
                                         <div className="w-full h-16 relative">
@@ -98,10 +98,10 @@ const Features = () => {
                                 <div className="bento-card w-full flex-row gap-6">
                                     <div className="flex flex-col mb-auto">
                                         <h4 className="text-xl font-heading font-medium heading ">
-                                            Customer relationship management
+                                            E-commerce Solutions
                                         </h4>
                                         <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                            Build stronger client relationships with tools that help you track interactions and deliver exceptional service.
+                                            Custom online stores with secure payment processing and intuitive product management.
                                         </p>
                                     </div>
                                     <div className="w-full h-28 relative">
@@ -121,10 +121,10 @@ const Features = () => {
                                     </div>
                                     <div className="flex flex-col mt-auto">
                                         <h4 className="text-xl font-heading font-medium heading ">
-                                            Contract management
+                                            Custom Web Applications
                                         </h4>
                                         <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                            Create, track, and manage contracts with automated workflows and notifications.
+                                            Tailor-made web applications that solve specific business challenges and streamline operations.
                                         </p>
                                     </div>
                                 </div>
@@ -136,10 +136,10 @@ const Features = () => {
                                     </div>
                                     <div className="flex flex-col mt-auto">
                                         <h4 className="text-xl font-heading font-medium heading ">
-                                            Task management
+                                            SEO & Performance Optimization
                                         </h4>
                                         <p className="text-sm md:text-base mt-2 text-muted-foreground">
-                                            Organize, prioritize, and track tasks across your team to ensure nothing falls through the cracks.
+                                            Fast-loading websites with technical SEO best practices that help you rank higher in search results.
                                         </p>
                                     </div>
                                 </div>

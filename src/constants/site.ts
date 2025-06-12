@@ -1,11 +1,10 @@
-export const APP_NAME = process.env.APP_NAME || "CRMSync";
+export const APP_NAME = process.env.APP_NAME || "LogiCore";
+export const APP_DESCRIPTION = process.env.APP_DESCRIPTION || "Transforming digital experiences with innovative web development solutions.";
+export const APP_DOMAIN = process.env.APP_DOMAIN || "logicore.vercel.app";
+export const APP_HOSTNAMES = [
+    process.env.APP_HOSTNAME || "logicore.vercel.app",
+    process.env.APP_HOSTNAME || "www.logicore.vercel.app",
+];
 
-export const APP_DOMAIN = process.env.APP_DOMAIN || "crmsync.vercel.app";
-
-export const APP_HOSTNAMES = new Set([
-    process.env.APP_HOSTNAME || "crmsync.vercel.app",
-    process.env.APP_HOSTNAME || "www.crmsync.vercel.app",
-]);
-
-export const APP_SIGNUP_URL = process.env.APP_SIGNUP_URL || "https://appcrmsync.vercel.app/sign-up";
-export const APP_SIGNIN_URL = process.env.APP_SIGNIN_URL || "https://appcrmsync.vercel.app/login";
+export const APP_SIGNUP_URL = process.env.APP_SIGNUP_URL || "https://logicore.vercel.app/contact";
+export const APP_SIGNIN_URL = process.env.APP_SIGNIN_URL || "https://logicore.vercel.app/contact";

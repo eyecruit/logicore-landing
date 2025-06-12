@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { APP_NAME } from "@/constants/site";
+import { APP_NAME, APP_DESCRIPTION } from "@/constants/site";
 
 interface MetadataProps {
     title?: string;
@@ -18,8 +18,8 @@ interface MetadataProps {
 }
 
 export const generateMetadata = ({
-    title = `CRMSync - Business Management Platform`,
-    description = "Manage tasks, projects, contracts, customers, and clients efficiently with CRMSync. Transform your business operations with our powerful features.",
+    title = `LogiCore - Web Development Agency`,
+    description = APP_DESCRIPTION,
     image = "/thumbnail.png",
     icons = [
         {
@@ -37,22 +37,22 @@ export const generateMetadata = ({
     ],
     noIndex = false,
     keywords = [
-        "AI content creation",
-        "content automation",
-        "AI writing assistant",
-        "content generation",
-        "artificial intelligence",
-        "content marketing"
+        "web development",
+        "web design",
+        "responsive design",
+        "UI/UX design",
+        "frontend development",
+        "website creation"
     ],
-    author = "Shreyas",
-    twitterHandle = "@yourtwitterhandle",
+    author = "LogiCore Team",
+    twitterHandle = "@logicore",
     type = "website",
     locale = "en_US",
     alternates = {},
     publishedTime,
     modifiedTime
 }: MetadataProps = {}): Metadata => {
-    const metadataBase = new URL("https://luro-ai.vercel.app");
+    const metadataBase = new URL("https://logicore.vercel.app");
     const imageUrl = image ? new URL(image, metadataBase).toString() : null;
 
     return {

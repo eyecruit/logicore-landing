@@ -12,20 +12,20 @@ const CTA = () => {
                     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-12 bg-violet-500 blur-[10rem]"></div>
                     <div className="flex flex-col items-center justify-center w-full z-20">
                         <h2 className="text-4xl md:text-6xl font-heading heading font-semibold !leading-tight mt-6">
-                            Transform your <br className="hidden md:block" /> business today
+                            Elevate your <br className="hidden md:block" /> digital presence
                         </h2>
                         <p className="text-base md:text-lg text-center text-accent-foreground/80 max-w-xl mx-auto mt-6">
-                            Ready to streamline your operations? Start your journey with CRMSync and take control of your business management.
+                            Ready to transform your online presence? Partner with LogiCore to create a stunning, high-performance website that drives results.
                         </p>
                         <div className="flex flex-col md:flex-row items-center justify-center w-full gap-6 mt-6">
                             <Button asChild size="lg" className="w-full md:w-max">
-                                <Link href="">
-                                    Get Started
+                                <Link href="/contact">
+                                    Get in Touch
                                 </Link>
                             </Button>
                             <Button asChild size="lg" variant="secondary" className="w-full md:w-max">
-                                <Link href="">
-                                    Schedule Demo
+                                <Link href="/projects">
+                                    View Our Work
                                 </Link>
                             </Button>
                         </div>

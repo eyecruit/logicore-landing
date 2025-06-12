@@ -1,4 +1,4 @@
-import { LucideProps, PenOff } from "lucide-react";
+import { LucideProps, PinOff } from "lucide-react";
 
 type IconType = {
     [key: string]: (props: LucideProps) => JSX.Element;

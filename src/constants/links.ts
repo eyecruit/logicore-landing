@@ -1,46 +1,46 @@
-import { ClockIcon, MessageSquare, BarChart2, FileTextIcon, UserPlusIcon, CreditCardIcon, SettingsIcon, LogOut, Headphones, ChartPieIcon, LucideIcon, MessagesSquareIcon, NewspaperIcon, MegaphoneIcon, LineChartIcon, MessageSquareTextIcon, UsersIcon } from 'lucide-react';
+import { BarChart2, CreditCard, FileText, LayoutDashboard, MessageSquare, Settings, Users, BarChart, PieChart } from 'lucide-react';
 
 type Link = {
     href: string;
     label: string;
-    icon: LucideIcon;
+    icon: any;
 }
 
 export const SIDEBAR_LINKS: Link[] = [
     {
         href: "/dashboard",
         label: "Dashboard",
-        icon: ChartPieIcon,
+        icon: LayoutDashboard,
     },
     {
         href: "/dashboard/campaigns",
         label: "Campaigns",
-        icon: MegaphoneIcon
+        icon: BarChart
     },
     {
         href: "/dashboard/analytics",
         label: "Analytics",
-        icon: LineChartIcon
+        icon: BarChart2
     },
     {
         href: "/dashboard/posts",
         label: "Posts",
-        icon: MessageSquareTextIcon
+        icon: MessageSquare
     },
     {
         href: "/dashboard/engagement",
         label: "Engagement",
-        icon: UsersIcon
+        icon: Users
     },
     {
         href: "/dashboard/billing",
         label: "Billing",
-        icon: CreditCardIcon
+        icon: CreditCard
     },
     {
         href: "/dashboard/settings",
         label: "Settings",
-        icon: SettingsIcon
+        icon: Settings
     },
 ];
 

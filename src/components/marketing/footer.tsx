@@ -22,15 +22,15 @@ const Footer = () => {
                         <div className="flex items-center gap-2">
                             <Icons.icon className="w-5 h-5" />
                             <span className="text-xl font-medium">
-                                CRMSync
+                                LogiCore
                             </span>
                         </div>
                         <p className="text-base max-w mt-4">
-                            Empower your business with our business management platform.
+                            Creating exceptional digital experiences through innovative web development.
                         </p>
                         <Button className="mt-8">
-                            <Link href="/app">
-                                Get started
+                            <Link href="/contact">
+                                Contact us
                             </Link>
                         </Button>
                     </div>
@@ -57,7 +57,7 @@ const Footer = () => {
             <Container>
                 <Wrapper className="pt-10 flex items-center justify-between relative">
                     <p className="text-sm text-secondary-foreground">
-                        &copy; {new Date().getFullYear()} Sync.Co All rights reserved.
+                        &copy; {new Date().getFullYear()} LogiCore. All rights reserved.
                     </p>
                     <div className="flex items-center gap-4">
                         <Link href="#" className="p-1">

@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
 import { BlurText } from "../ui/blur-text";
@@ -8,7 +10,15 @@ import Container from "../global/container";
 
 const Hero = () => {
     return (
-        <div className="flex flex-col items-center text-center w-full max-w-5xl my-24 mx-auto z-40 relative">
+        <div className="flex flex-col items-center justify-center max-w-6xl mx-auto text-center">
+            <div className="flex flex-col items-center justify-center w-full max-w-3xl mx-auto">
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+                    Modern Web Solutions for Growing Businesses
+                </h1>
+                <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl">
+                    We build beautiful, functional websites and web applications that help businesses grow in the digital world. <span className="hidden sm:inline">LogiCore is the comprehensive solution for all your web development needs.</span>
+                </p>
+            </div>
             <Container delay={0.0}>
                 <div className="pl-2 pr-1 py-1 rounded-full border border-foreground/10 hover:border-foreground/15 backdrop-blur-lg cursor-pointer flex items-center gap-2.5 select-none w-max mx-auto">
                     <div className="w-3.5 h-3.5 rounded-full bg-primary/40 flex items-center justify-center relative">
@@ -19,7 +29,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <span className="inline-flex items-center justify-center gap-2 animate-text-gradient animate-background-shine bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-sm text-transparent">
-                        Streamline your business
+                        Elevate your digital presence
                         <span className="text-xs text-secondary-foreground px-1.5 py-0.5 rounded-full bg-gradient-to-b from-foreground/20 to-foreground/10 flex items-center justify-center">
                             What&apos;s new
                             <ArrowRightIcon className="w-3.5 h-3.5 ml-1 text-foreground/50" />
@@ -28,24 +38,24 @@ const Hero = () => {
                 </div>
             </Container>
             <BlurText
-                word={"All-in-one business\n management solution"}
+                word={"Expert Web Development\n & Design Solutions"}
                 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl bg-gradient-to-br from-foreground to-foreground/60 bg-clip-text text-transparent py-2 md:py-0 lg:!leading-snug font-medium racking-[-0.0125em] mt-6 font-heading"
             />
             <Container delay={0.1}>
                 <p className="text-sm sm:text-base lg:text-lg mt-4 text-accent-foreground/60 max-w-2xl mx-auto">
-                    Effortlessly manage tasks, projects, contracts, customers, and clients in one unified platform. <span className="hidden sm:inline">CRMSync is the comprehensive solution designed to help your business grow and succeed.</span>
+                    From responsive websites to complex web applications, we deliver tailored digital solutions that drive results. <span className="hidden sm:inline">LogiCore is your partner for creating impactful digital experiences.</span>
                 </p>
             </Container>
             <Container delay={0.2}>
                 <div className="flex items-center justify-center md:gap-x-6 mt-8">
                     <Button asChild size="lg">
-                        <Link href="/app">
-                            Start for free
+                        <Link href="/contact">
+                            Get in touch
                         </Link>
                     </Button>
                     <Button asChild size="lg" variant="outline" className="hidden md:flex">
-                        <Link href="#">
-                            How it works
+                        <Link href="/projects">
+                            View our work
                         </Link>
                     </Button>
                 </div>
@@ -57,7 +67,7 @@ const Hero = () => {
                     <div className="rounded-lg lg:rounded-[24px] border p-2 border-neutral-700 bg-black">
                         <Image
                             src="/images/dashboard.png"
-                            alt="dashboard"
+                            alt="website showcase"
                             width={1920}
                             height={1080}
                             className="rounded-lg lg:rounded-[20px]"
