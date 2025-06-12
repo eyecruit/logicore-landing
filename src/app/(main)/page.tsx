@@ -1,5 +1,5 @@
 import { Background, Companies, Connect, Container, CTA , Hero, Perks, Pricing, Reviews, Wrapper } from "@/components";
-import AnimatedFeatures from "@/components/marketing/features";
+import AnimatedFeatures from "@/components/main/features";
 import { Spotlight } from "@/components/ui/spotlight";
 import { generateMetadata } from "@/functions/metadata";
 

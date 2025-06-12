@@ -6,16 +6,16 @@ import Background from "./global/background";
 import Providers from "./global/providers";
 
 
-import Hero from "./marketing/hero";
-import Navbar from "./marketing/navbar";
-import Companies from "./marketing/companies";
-import Features from "./marketing/features";
-import Connect from "./marketing/connect";
-import Perks from "./marketing/perks";
-import Pricing from "./marketing/pricing";
-import Reviews from "./marketing/reviews";
-import CTA from "./marketing/cta";
-import Footer from "./marketing/footer";
+import Hero from "./main/hero";
+import Navbar from "./main/navbar";
+import Companies from "./main/companies";
+import Features from "./main/features";
+import Connect from "./main/connect";
+import Perks from "./main/perks";
+import Pricing from "./main/pricing";
+import Reviews from "./main/reviews";
+import CTA from "./main/cta";
+import Footer from "./main/footer";
 
 export {
     Icons,
