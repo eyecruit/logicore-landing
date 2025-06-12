@@ -10,17 +10,17 @@ import Container from "../global/container";
 
 const Hero = () => {
     return (
-        <div className="flex flex-col items-center justify-center max-w-6xl mx-auto text-center">
-            <div className="flex flex-col items-center justify-center w-full max-w-3xl mx-auto">
-                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+        <div className="flex flex-col items-center justify-center max-w-6xl mx-auto text-center pt-10">
+            <div className="flex flex-col items-center justify-center w-full max-w-3xl mx-auto pt-10">
+                {/* <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
                     Modern Web Solutions for Growing Businesses
-                </h1>
-                <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl">
+                </h1> */}
+                {/* <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl">
                     We build beautiful, functional websites and web applications that help businesses grow in the digital world. <span className="hidden sm:inline">LogiCore is the comprehensive solution for all your web development needs.</span>
-                </p>
+                </p> */}
             </div>
             <Container delay={0.0}>
-                <div className="pl-2 pr-1 py-1 rounded-full border border-foreground/10 hover:border-foreground/15 backdrop-blur-lg cursor-pointer flex items-center gap-2.5 select-none w-max mx-auto">
+                <div className=" pl-2 pr-1 py-1 rounded-full border border-foreground/10 hover:border-foreground/15 backdrop-blur-lg cursor-pointer flex items-center gap-2.5 select-none w-max mx-auto">
                     <div className="w-3.5 h-3.5 rounded-full bg-primary/40 flex items-center justify-center relative">
                         <div className="w-2.5 h-2.5 rounded-full bg-primary/60 flex items-center justify-center animate-ping">
                             <div className="w-2.5 h-2.5 rounded-full bg-primary/60 flex items-center justify-center animate-ping"></div>

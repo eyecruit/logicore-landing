@@ -1,7 +1,13 @@
 import { Background, Companies, Connect, Container, CTA, Features, Hero, Perks, Pricing, Reviews, Wrapper } from "@/components";
 import { Spotlight } from "@/components/ui/spotlight";
+import { generateMetadata } from "@/functions/metadata";
 
-const HomePage = () => {
+export const metadata = generateMetadata({
+  title: "LogiCore - Web Development Agency",
+  description: "Expert web development solutions for businesses of all sizes. We create beautiful, functional websites that drive results.",
+});
+
+export default function HomePage() {
     return (
         <Background>
             <Wrapper className="py-20 relative">
@@ -24,6 +30,4 @@ const HomePage = () => {
             </Wrapper>
         </Background>
     )
-};
-
-export default HomePage
+}
