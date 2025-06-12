@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/functions";
-import { ArrowRightIcon, XIcon } from "lucide-react";
+import { ArrowRightIcon, XIcon ,Phone , Calendar} from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from 'react';
 import Icons from "../global/icons";
@@ -49,13 +49,13 @@ const Navbar = () => {
                         </div>
                         <div className="items-center flex gap-2 lg:gap-4">
                             <Button size="sm" variant="tertiary" asChild className="hover:translate-y-0 hover:scale-100">
-                                <Link href={APP_SIGNUP_URL}>
-                                    Sign Up
+                                <Link href="/contact">
+                                    Book <Phone className="w-4 h-4 ml-2 hidden lg:block" />
                                 </Link>
                             </Button>
-                            <Button size="sm" variant="white" asChild className="hidden sm:flex">
-                                <Link href={APP_SIGNIN_URL}>
-                                    Dashboard
+                            <Button size="sm" variant="tertiary" asChild className="hidden sm:flex">
+                                <Link target="_blank" href="https://cal.com/logicore">
+                                    Schedule <Calendar className="w-4 h-4 ml-2 hidden lg:block" />
                                     <ArrowRightIcon className="w-4 h-4 ml-2 hidden lg:block" />
                                 </Link>
                             </Button>
