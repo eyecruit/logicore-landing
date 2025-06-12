@@ -68,7 +68,7 @@ const pricingPlans = [
 export default function PricingPage() {
   return (
     <Background>
-      <Wrapper className="py-20 relative">
+      <Wrapper className="py-20 relative pt-40">
         <Container>
           <div className="text-center mb-16">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">Transparent Pricing</h1>

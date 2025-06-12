@@ -9,7 +9,6 @@ import Wrapper from "../global/wrapper";
 import { Button } from "../ui/button";
 import Menu from "./menu";
 import MobileMenu from "./mobile-menu";
-import { APP_SIGNUP_URL, APP_SIGNIN_URL } from "@/constants/site";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);

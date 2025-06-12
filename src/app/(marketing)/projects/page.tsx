@@ -57,7 +57,7 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <Background>
-      <Wrapper className="py-20 relative">
+      <Wrapper className="py-20 relative pt-40">
         <Container>
           <div className="text-center mb-16">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">Our Projects</h1>

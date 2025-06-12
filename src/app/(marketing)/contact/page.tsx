@@ -13,7 +13,7 @@ export const metadata = generateMetadata({
 export default function ContactPage() {
   return (
     <Background>
-      <Wrapper className="py-20 relative">
+      <Wrapper className="py-20 relative pt-40">
         <Container className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h1>
