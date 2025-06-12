@@ -1,18 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Remove static export for Vercel deployment
-    // output: 'export',
+    // Remove static export and trailingSlash for Vercel deployment
     images: {
         remotePatterns: [
             {
                 protocol: "https",
                 hostname: "randomuser.me"
             }
-        ],
-        unoptimized: true
+        ]
     },
-    // Add trailing slashes for better routing
-    trailingSlash: true
+    // Fix for route groups in Vercel deployment
+    experimental: {
+        appDir: true
+    }
 };
 
 export default nextConfig;

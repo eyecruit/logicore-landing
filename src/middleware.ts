@@ -2,23 +2,8 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  const url = request.nextUrl.clone();
-  
-  // Handle the root path
-  if (url.pathname === '/') {
-    return NextResponse.next();
-  }
-
-  // Handle other routes
-  const routes = ['/about', '/contact', '/projects', '/pricing'];
-  
-  if (routes.some(route => url.pathname.startsWith(route))) {
-    return NextResponse.next();
-  }
-
-  // Redirect to home for any other route
-  url.pathname = '/';
-  return NextResponse.redirect(url);
+  // Just pass through all requests
+  return NextResponse.next();
 }
 
 export const config = {
