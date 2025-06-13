@@ -4,10 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node deploy.js",
-    "start": "next start",
-    "export": "next export",
-    "deploy": "next build && next export && node deploy.js"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
