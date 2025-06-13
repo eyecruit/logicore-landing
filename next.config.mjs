@@ -2,23 +2,18 @@
 const nextConfig = {
     // Configuration for Vercel deployment
     basePath: '',
+    trailingSlash: false,
     images: {
         remotePatterns: [
             {
                 protocol: "https",
                 hostname: "randomuser.me"
             }
-        ]
+        ],
+        unoptimized: true
     },
-    // Remove rewrites as they might be causing issues
-    // async rewrites() {
-    //     return [
-    //         {
-    //             source: '/',
-    //             destination: '/main'
-    //         }
-    //     ];
-    // }
+    output: 'export'
+    // Removing rewrites as they're not compatible with static export
 };
 
 export default nextConfig;
