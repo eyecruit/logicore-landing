@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import { cn, generateMetadata } from "@/functions";
 import { inter, satoshi } from "@/constants";
 import { Toaster } from "@/components/ui/sonner";
-import { Providers } from "@/components";
+import { Footer, Navbar, Providers } from "@/components";
 
 export const metadata = generateMetadata();
 
@@ -26,7 +26,9 @@ export default function RootLayout({
                     position="top-right"
                 />
                 <Providers>
+                    <Navbar />
                     {children}
+                    <Footer />
                 </Providers>
             </body>
         </html>
