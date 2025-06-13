@@ -1,4 +1,5 @@
 import { Background, Companies, Connect, Container, CTA , Hero, Perks, Pricing, Reviews, Wrapper } from "@/components";
+import CallToAction from "@/components/main/contact";
 import AnimatedFeatures from "@/components/main/features";
 import { Spotlight } from "@/components/ui/spotlight";
 import { generateMetadata } from "@/functions/metadata";
@@ -29,6 +30,7 @@ export default function HomePage() {
                 {/* <Pricing /> */}
                 <Reviews />
                 <CTA />
+                {/* <CallToAction /> Contact call to action not clickable */}
             </Wrapper>
         </Background>
     )
