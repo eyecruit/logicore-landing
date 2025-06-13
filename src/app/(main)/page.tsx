@@ -8,7 +8,7 @@ export const metadata = generateMetadata({
   description: "Expert web development solutions for businesses of all sizes. We create beautiful, functional websites that drive results.",
 });
 
-export default function HomePage() {
+export default function MarketingPage() {
     return (
         <Background>
             <Wrapper className="py-20 relative">
