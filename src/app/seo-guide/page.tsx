@@ -41,7 +41,7 @@ export default function SEOGuidePage() {
               <div className="w-full md:w-2/3">
                 <div className="prose prose-invert max-w-none">
                   <p className="text-lg">
-                    At <span className="font-bold">LogiCore</span>, we help businesses build and redesign websites that don't just look great, but also <span className="font-medium text-primary">rank on Google</span>. Here's a quick summary every business owner should know about SEO — and why it's critical for your success.
+                    At <span className="font-bold">LogiCore</span>, we help businesses build and redesign websites that don't just look great, but also <span className="font-medium text-primary">Rank on Google</span>. Here's a quick summary every business owner should know about SEO — and why it's critical for your success.
                   </p>
 
                   <div className="mt-12">
