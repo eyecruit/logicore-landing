@@ -78,10 +78,10 @@ const Menu = () => {
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid w-[400px] gap-3 p-4 md:w-[400px] md:grid-cols-2 lg:w-[500px] xl:w-[500px]">
-                            <Item title="Blog" href="/resources/blog" icon={<FileCode className="w-5 h-5" />}>
+                            <Item title="Case Studies" href="/case-studies" icon={<FileCode className="w-5 h-5" />}>
                                 Web development tips and industry insights.
                             </Item>
-                            <Item title="SEO Guide" href="/resources/seo-guide" icon={<SearchCheck className="w-5 h-5" />}>
+                            <Item title="SEO Guide" href="/seo-guide" icon={<SearchCheck className="w-5 h-5" />}>
                                 Learn how to optimize your website for search engines.
                             </Item>
                         </ul>
