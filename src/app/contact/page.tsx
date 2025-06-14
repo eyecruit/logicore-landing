@@ -22,7 +22,7 @@ export default function ContactPage() {
             </p>
           </div>
           
-          <form className="space-y-6">
+          <form className="space-y-6 max-w-2xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
@@ -53,7 +53,7 @@ export default function ContactPage() {
             </Button>
           </form>
           
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <h3 className="text-lg font-semibold mb-2">Email Us</h3>
               <p className="text-muted-foreground">info@logicore.com</p>
@@ -66,7 +66,7 @@ export default function ContactPage() {
               <h3 className="text-lg font-semibold mb-2">Visit Us</h3>
               <p className="text-muted-foreground">123 Web Street, Digital City</p>
             </div>
-          </div>
+          </div> */}
         </Container>
       </Wrapper>
     </Background>
