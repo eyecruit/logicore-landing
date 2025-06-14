@@ -3,10 +3,22 @@ import Container from "../global/container";
 import { Button } from "../ui/button";
 import { Particles } from "../ui/particles";
 import RetroGrid from "../ui/retro-grid";
+import { SectionBadge } from "../ui/section-bade";
 
 const CTA = () => {
     return (
         <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24 w-full relative">
+            <Container>
+                <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
+                    <SectionBadge title="Contact us" />
+                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6 pb-6">
+                        Let's Build Something Great
+                    </h2>
+                    {/* <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
+                        Ready to start or scale your project? Let’s build impactful web solutions together.
+                    </p> */}
+                </div>
+            </Container>
             <Container>
                 <div className="flex flex-col items-center justify-center text-center w-full px-4 md:px-0 mx-auto h-[500px] border border-foreground/10 rounded-3xl overflow-hidden relative">
                     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-12 bg-violet-500 blur-[10rem]"></div>
@@ -24,8 +36,8 @@ const CTA = () => {
                                 </Link>
                             </Button>
                             <Button asChild size="lg" variant="secondary" className="w-full md:w-max">
-                                <Link href="/projects">
-                                    View Our Work
+                                <Link href="https://cal.com/logicore/30min" target="_blank">
+                                    Schedule Meet
                                 </Link>
                             </Button>
                         </div>

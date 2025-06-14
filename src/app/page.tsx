@@ -30,7 +30,8 @@ export default function HomePage() {
                 {/* <Pricing /> */}
                 <Reviews />
                 <CTA />
-                {/* <CallToAction /> Contact call to action not clickable */}
+                {/* <CallToAction />  */}
+                {/* Contact call to action not clickable */}
             </Wrapper>
         </Background>
     )

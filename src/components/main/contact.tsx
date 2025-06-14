@@ -9,17 +9,7 @@ import Link from "next/link";
 const CallToAction = () => {
   return (
     <section className="py-4 md:py-8 lg:py-16">
-      <Container>
-        <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
-          <SectionBadge title="Contact us" />
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
-            Get in Touch — Let's Build Something Great
-          </h2>
-          <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
-            Ready to start or scale your project? Let’s build impactful web solutions together.
-          </p>
-        </div>
-      </Container>
+
       <div className="max-w-6xl mx-auto px-6 mt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
           <div className="bg-green-pea p-8 md:p-16 rounded-3xl border border-solid border-green-pea">
