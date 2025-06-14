@@ -18,7 +18,7 @@ interface MetadataProps {
 }
 
 export const generateMetadata = ({
-    title = `LogiCore - Web Development Agency`,
+    title = `The LogiCore - Web Development Agency`,
     description = APP_DESCRIPTION,
     image = "/thumbnail.png",
     icons = [
@@ -44,15 +44,15 @@ export const generateMetadata = ({
         "frontend development",
         "website creation"
     ],
-    author = "LogiCore Team",
-    twitterHandle = "@logicore",
+    author = "The LogiCore Team",
+    twitterHandle = "@thelogicore",
     type = "website",
     locale = "en_US",
     alternates = {},
     publishedTime,
     modifiedTime
 }: MetadataProps = {}): Metadata => {
-    const metadataBase = new URL("https://logicore.vercel.app");
+    const metadataBase = new URL("https://thelogicore.vercel.app");
     const imageUrl = image ? new URL(image, metadataBase).toString() : null;
 
     return {
