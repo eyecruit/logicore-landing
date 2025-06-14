@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { cn } from "@/functions";
 import { useClickOutside } from "@/hooks";
 import { motion } from "framer-motion";
-import { FileText, Gem, HelpCircle, Info, Layers3, Package, Monitor, Smartphone, UserCog, Waypoints } from "lucide-react";
+import { FileText, Gem, HelpCircle, Info, Layers3, Package, Monitor, Smartphone, UserCog, Waypoints, Calendar, BookOpen } from "lucide-react";
 import Link from "next/link";
 import React from 'react';
 
@@ -117,33 +117,25 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/resources/blog" className="flex items-center w-full text-start">
-                                        <FileText className="w-4 h-4 mr-2" />
-                                        Blog
-                                    </Link>
-                                </li>
-                                <li
-                                    className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
-                                >
-                                    <Link href="/resources/case-studies" className="flex items-center w-full text-start">
-                                        <FileText className="w-4 h-4 mr-2" />
+                                    <Link href="/case-studies" className="flex items-center w-full text-start">
+                                        <BookOpen className="w-4 h-4 mr-2" />
                                         Case Studies
                                     </Link>
                                 </li>
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/resources/tools" className="flex items-center w-full text-start">
-                                        <Package className="w-4 h-4 mr-2" />
-                                        Tools
+                                    <Link href="/seo-guide" className="flex items-center w-full text-start">
+                                        <FileText className="w-4 h-4 mr-2" />
+                                        SEO Guide
                                     </Link>
                                 </li>
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/contact" className="flex items-center w-full text-start">
+                                    <Link href="https://cal.com/logicore/30min" className="flex items-center w-full text-start">
                                         <HelpCircle className="w-4 h-4 mr-2" />
-                                        Support
+                                        Schedule <Calendar className="w-4 h-4 ml-2" />
                                     </Link>
                                 </li>
                             </AccordionContent>
