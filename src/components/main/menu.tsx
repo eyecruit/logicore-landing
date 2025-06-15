@@ -52,9 +52,9 @@ const Menu = () => {
                             <Item title="Web Development" href="/services/web-development" icon={<Code className="w-5 h-5" />}>
                                 Custom-coded websites with modern technologies.
                             </Item>
-                            <Item title="Responsive Design" href="/services/responsive-design" icon={<Smartphone className="w-5 h-5" />}>
+                            {/* <Item title="Responsive Design" href="/services/responsive-design" icon={<Smartphone className="w-5 h-5" />}>
                                 Websites that work perfectly on all devices.
-                            </Item>
+                            </Item> */}
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>

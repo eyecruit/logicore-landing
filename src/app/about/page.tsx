@@ -90,7 +90,7 @@ export default function AboutPage() {
             </div>
           </div>
           
-          <div>
+          {/* <div>
             <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">Meet Our Team</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {teamMembers.map((member, index) => (
@@ -109,7 +109,7 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </Container>
       </Wrapper>
     </Background>
