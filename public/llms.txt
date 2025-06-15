@@ -1,0 +1,21 @@
+# Allow OpenAI (ChatGPT, GPTBot)
+openai.com: allow
+
+# Allow Google (Gemini, SGE, etc.)
+google.com: allow
+
+# Allow Anthropic (Claude)
+anthropic.com: allow
+
+# Allow Perplexity AI
+perplexity.ai: allow
+
+# Allow You.com
+you.com: allow
+
+# Disallow unauthorized AI crawlers
+*: disallow
+
+# Optional: Add notes
+# This content may be indexed and used in search summaries and generative previews,
+# but we prohibit full-scale reproduction or training without explicit permission.

@@ -1,2 +1,30 @@
 User-agent: *
-Allow: / 
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /private/
+Allow: /
+
+# Allow Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Allow Bingbot
+User-agent: bingbot
+Allow: /
+
+# Allow GPTBot (OpenAI)
+User-agent: GPTBot
+Allow: /
+
+# Allow Claude (Anthropic)
+User-agent: ClaudeBot
+Allow: /
+
+# Allow Common Crawl (used by many LLMs)
+User-agent: CCBot
+Allow: /
+
+# Optional: Disallow all AI bots except selected
+# User-agent: *
+# Disallow: /
