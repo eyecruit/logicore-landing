@@ -2,9 +2,14 @@ export default function WebDesign() {
 
   return (
     <>
-      <h1 className="flex items-center justify-center mt-10 text-4xl font-bold pt-[150px]">
-        Web Development
-      </h1>
+
+      <div className="text-center mb-16 pt-[150px]">
+  <h1 className="text-3xl md:text-5xl font-bold mb-4">Web Development</h1>
+  <p className="text-muted-foreground max-w-2xl mx-auto">
+    In web development, we showcase our ability to build responsive, scalable, and user-friendly websites tailored to client needs. 
+  </p>
+</div>
+
 
       {/* <div className="mt-12">
         <AnimatedTestimonials testimonials={testimonials} />

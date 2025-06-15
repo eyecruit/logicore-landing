@@ -56,9 +56,13 @@ export default function WebDesign() {
 
   return (
     <>
-      <h1 className="flex items-center justify-center pt-[150px] text-4xl font-bold">
-        Web Design
-      </h1>
+<div className="text-center mb-16 pt-[150px]">
+  <h1 className="text-3xl md:text-5xl font-bold mb-4">Web Design</h1>
+  <p className="text-muted-foreground max-w-2xl mx-auto">
+      Discover modern web design principles including layout patterns, responsive components, and interactive elements.
+  </p>
+</div>
+
 
       <div className="mt-12">
         <AnimatedTestimonials testimonials={testimonials} />
