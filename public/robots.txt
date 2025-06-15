@@ -28,3 +28,4 @@ Allow: /
 # Optional: Disallow all AI bots except selected
 # User-agent: *
 # Disallow: /
+
