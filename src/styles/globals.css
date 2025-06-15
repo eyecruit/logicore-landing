@@ -388,3 +388,63 @@ Allow long-press selection on touch devices */
     -webkit-user-select: text;
   }
 } */
+
+/* Preserve input background color when focused or filled */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(var(--background), 0.5) inset;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--foreground);
+}
+
+/* Ensure inputs maintain their background color */
+.bg-background\/50, 
+input.bg-background\/50, 
+textarea.bg-background\/50 {
+  background-color: rgba(var(--background), 0.5) !important;
+}
+
+/* Override browser's autofill styles */
+input:-webkit-autofill {
+  background-color: rgba(var(--background), 0.5) !important;
+}
+
+/* Custom Toast Styling */
+.custom-toast-left[data-sonner-toast] {
+  width: 400px !important;
+  padding-right: 12px !important;
+  padding-left: 34px !important;
+  position: relative !important;
+}
+
+/* Move close button to left top */
+.custom-toast-left[data-sonner-toast] [data-close-button] {
+  position: absolute !important;
+  left: 8px !important;
+  right: auto !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 10 !important;
+  opacity: 0.8 !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-radius: 50% !important;
+  padding: 2px !important;
+}
+
+.custom-toast-left[data-sonner-toast] [data-close-button]:hover {
+  opacity: 1 !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Adjust toast positioning for left side */
+[data-sonner-toaster][data-position="top-right"] {
+  right: 16px !important;
+  left: auto !important;
+}

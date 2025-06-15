@@ -23,7 +23,10 @@ export default function RootLayout({
                 <Toaster
                     richColors
                     theme="dark"
-                    position="top-right"
+                    position="top-left"
+                    closeButton={true}
+                    expand={false}
+                    offset={16}
                 />
                 <Providers>
                     <Navbar />
